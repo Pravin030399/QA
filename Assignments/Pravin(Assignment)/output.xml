@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211216 05:12:04.597" rpa="false" schemaversion="2">
+<suite id="s1" name="Task4" source="/home/pravin/PycharmProjects/demo1/task4.robot">
+<test id="s1-t1" name="task 4">
+<kw name="Login" library="keywords">
+<arg>${my_email}</arg>
+<arg>${my_pw}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211216 05:12:04.726" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
+<status status="PASS" starttime="20211216 05:12:04.726" endtime="20211216 05:12:06.887"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211216 05:12:06.893" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x563bc9d59463 &lt;unknown&gt;
+#1 0x563bc9831678 &lt;unknown&gt;
+#2 0x563bc9812242 &lt;unknown&gt;
+#3 0x563bc9887d9b &lt;unknown&gt;
+#4 0x563bc9897055 &lt;unknown&gt;
+#5 0x563bc9884683 &lt;unknown&gt;
+#6 0x563bc985ab64 &lt;unknown&gt;
+#7 0x563bc985bb55 &lt;unknown&gt;
+#8 0x563bc9d890fe &lt;unknown&gt;
+#9 0x563bc9d9e9d0 &lt;unknown&gt;
+#10 0x563bc9d8a055 &lt;unknown&gt;
+#11 0x563bc9d9fe18 &lt;unknown&gt;
+#12 0x563bc9d7e82b &lt;unknown&gt;
+#13 0x563bc9dbaf98 &lt;unknown&gt;
+#14 0x563bc9dbb118 &lt;unknown&gt;
+#15 0x563bc9dd659d &lt;unknown&gt;
+#16 0x7f9d57e84609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20211216 05:12:06.889" endtime="20211216 05:12:06.893"/>
+</kw>
+<msg timestamp="20211216 05:12:06.893" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x563bc9d59463 &lt;unknown&gt;
+#1 0x563bc9831678 &lt;unknown&gt;
+#2 0x563bc9812242 &lt;unknown&gt;
+#3 0x563bc9887d9b &lt;unknown&gt;
+#4 0x563bc9897055 &lt;unknown&gt;
+#5 0x563bc9884683 &lt;unknown&gt;
+#6 0x563bc985ab64 &lt;unknown&gt;
+#7 0x563bc985bb55 &lt;unknown&gt;
+#8 0x563bc9d890fe &lt;unknown&gt;
+#9 0x563bc9d9e9d0 &lt;unknown&gt;
+#10 0x563bc9d8a055 &lt;unknown&gt;
+#11 0x563bc9d9fe18 &lt;unknown&gt;
+#12 0x563bc9d7e82b &lt;unknown&gt;
+#13 0x563bc9dbaf98 &lt;unknown&gt;
+#14 0x563bc9dbb118 &lt;unknown&gt;
+#15 0x563bc9dd659d &lt;unknown&gt;
+#16 0x7f9d57e84609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20211216 05:12:06.894" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x563bc9d59463 &lt;unknown&gt;
+#1 0x563bc9831678 &lt;unknown&gt;
+#2 0x563bc9812242 &lt;unknown&gt;
+#3 0x563bc9887d9b &lt;unknown&gt;
+#4 0x563bc9897055 &lt;unknown&gt;
+#5 0x563bc9884683 &lt;unknown&gt;
+#6 0x563bc985ab64 &lt;unknown&gt;
+#7 0x563bc985bb55 &lt;unknown&gt;
+#8 0x563bc9d890fe &lt;unknown&gt;
+#9 0x563bc9d9e9d0 &lt;unknown&gt;
+#10 0x563bc9d8a055 &lt;unknown&gt;
+#11 0x563bc9d9fe18 &lt;unknown&gt;
+#12 0x563bc9d7e82b &lt;unknown&gt;
+#13 0x563bc9dbaf98 &lt;unknown&gt;
+#14 0x563bc9dbb118 &lt;unknown&gt;
+#15 0x563bc9dd659d &lt;unknown&gt;
+#16 0x7f9d57e84609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20211216 05:12:06.887" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>dt_core_header_acc-info-preloader</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${email_field}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_field}</arg>
+<arg>${hello_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=txtPass</arg>
+<arg>${hello_pw}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_oauth_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.894" endtime="20211216 05:12:06.895"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[text()="Deposit" and contains(@class,"dc-text dc-btn__text")]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.895" endtime="20211216 05:12:06.895"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dt_core_account-info_acc-info</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.895" endtime="20211216 05:12:06.895"/>
+</kw>
+<kw name="Switch to demo" library="keywords">
+<status status="NOT RUN" starttime="20211216 05:12:06.895" endtime="20211216 05:12:06.895"/>
+</kw>
+<status status="FAIL" starttime="20211216 05:12:04.725" endtime="20211216 05:12:06.895"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@class="chart-container__loader"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-symbol-select-btn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[text()="Synthetic Indices"]//parent::div[contains(@class,"sc-mcd__filter__item--selected")]</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Synthetic Indices"]//parent::div[contains(@class,"sc-mcd__filter__item--selected")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[text()="AUD/USD"]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="AUD/USD"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.896" endtime="20211216 05:12:06.896"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="trade-container__fieldset"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@value="high_low"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@value="high_low"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="trade-container__fieldset"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_simple_toggle</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.897"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="duration-container"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.897" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="dropdown-display"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dropdown-display"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-themed-scrollbars dc-themed-scrollbars__autohide"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="d"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="clear Input Field">
+<arg>//*[@name="duration"]</arg>
+<status status="NOT RUN" starttime="20211216 05:12:06.898" endtime="20211216 05:12:06.898"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@name="duration"]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="clear Input Field">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<arg>+0.01</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Contracts more than 24 hours in duration would need an absolute barrier.</arg>
+<arg>60</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="clear Input Field">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<arg>6424.06</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_purchase_put_button" and contains(@class, "btn-purchase--disabled")]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.899" endtime="20211216 05:12:06.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_purchase_put_button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211216 05:12:06.900" endtime="20211216 05:12:06.900"/>
+</kw>
+<status status="FAIL" starttime="20211216 05:12:04.725" endtime="20211216 05:12:06.900">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x563bc9d59463 &lt;unknown&gt;
+#1 0x563bc9831678 &lt;unknown&gt;
+#2 0x563bc9812242 &lt;unknown&gt;
+#3 0x563bc9887d9b &lt;unknown&gt;
+#4 0x563bc9897055 &lt;unknown&gt;
+#5 0x563bc9884683 &lt;unknown&gt;
+#6 0x563bc985ab64 &lt;unknown&gt;
+#7 0x563bc985bb55 &lt;unknown&gt;
+#8 0x563bc9d890fe &lt;unknown&gt;
+#9 0x563bc9d9e9d0 &lt;unknown&gt;
+#10 0x563bc9d8a055 &lt;unknown&gt;
+#11 0x563bc9d9fe18 &lt;unknown&gt;
+#12 0x563bc9d7e82b &lt;unknown&gt;
+#13 0x563bc9dbaf98 &lt;unknown&gt;
+#14 0x563bc9dbb118 &lt;unknown&gt;
+#15 0x563bc9dd659d &lt;unknown&gt;
+#16 0x7f9d57e84609 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" starttime="20211216 05:12:04.597" endtime="20211216 05:12:06.901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Task4">Task4</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211216 05:12:06.893" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Stacktrace:
+#0 0x563bc9d59463 &lt;unknown&gt;
+#1 0x563bc9831678 &lt;unknown&gt;
+#2 0x563bc9812242 &lt;unknown&gt;
+#3 0x563bc9887d9b &lt;unknown&gt;
+#4 0x563bc9897055 &lt;unknown&gt;
+#5 0x563bc9884683 &lt;unknown&gt;
+#6 0x563bc985ab64 &lt;unknown&gt;
+#7 0x563bc985bb55 &lt;unknown&gt;
+#8 0x563bc9d890fe &lt;unknown&gt;
+#9 0x563bc9d9e9d0 &lt;unknown&gt;
+#10 0x563bc9d8a055 &lt;unknown&gt;
+#11 0x563bc9d9fe18 &lt;unknown&gt;
+#12 0x563bc9d7e82b &lt;unknown&gt;
+#13 0x563bc9dbaf98 &lt;unknown&gt;
+#14 0x563bc9dbb118 &lt;unknown&gt;
+#15 0x563bc9dd659d &lt;unknown&gt;
+#16 0x7f9d57e84609 &lt;unknown&gt;
+</msg>
+</errors>
+</robot>
